@@ -1,9 +1,11 @@
 from random import randrange
+import sys
 
 def main():
-    string = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890~`!@#$%^&*-_+=/?.,'
+    length = int(sys.argv[1])
+    string = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890~`!@#$%^&*-_+=/?.'
     password = ''
-    for i in range(16):
+    for i in range(length):
         password += string[randrange(80)]
     print(password)
 if __name__ == '__main__':

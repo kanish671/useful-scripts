@@ -1,2 +1,3 @@
 # useful-scripts
-Useful scripts repo
+
+Repository for some useful scripts
